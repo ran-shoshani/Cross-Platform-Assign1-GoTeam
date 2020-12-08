@@ -41,31 +41,36 @@
 
 <body>
     <div class="app">
-        <!-- <h1>Apache Cordova</h1> -->
-
-        <!-- <h1>Test Header</h1>
-        <h2>hello</h2>
-        <input type="text"/> crtrl + / -->
-
-        <!-- <class class="logo_image"></class>
-            <img src="img/goteam1.png"/>
-        </div>  -->
 
         <div style="text-align: center;">
-            <img src="img/goteam3.png" class="logo_image"/>
-            <form>
-                <!--      <label for="text-1">Text input:</label>
-                     <input type="text" name="text-1" id="text-1" value=""> -->
-                <!--      <label for="text-3">Text input: data-clear-btn="true"</label> -->
-                     <input type="text" data-clear-btn="true" name="text-3" id="text-3" value="" placeholder="Input...">
-            </form>
+            <img src="img/goteam3.png" class="logo_image" />
+
+            <div class="container">
+                <p>
+                    <label for="new-task">Add Item</label><input id="new-task" type="text"><button>Add</button>
+                </p>
+
+                <h3>Todo</h3>
+                <ul id="incomplete-tasks">
+                    <li><input type="checkbox"><label>Pay Bills</label><input type="text"><button
+                            class="edit">Edit</button><button class="delete">Delete</button></li>
+                    <li class="editMode"><input type="checkbox"><label>Go Shopping</label><input type="text"
+                            value="Go Shopping"><button class="edit">Edit</button><button class="delete">Delete</button>
+                    </li>
+
+                </ul>
+
+                <h3>Completed</h3>
+                <ul id="completed-tasks">
+                    <li><input type="checkbox" checked><label>See the Doctor</label><input type="text"><button
+                            class="edit">Edit</button><button class="delete">Delete</button></li>
+                </ul>
+            </div>
 
 
         </div>
-
-    </div>
-    <script src="cordova.js"></script>
-    <script src="js/index.js"></script>
+        <script src="cordova.js"></script>
+        <script src="js/index.js"></script>
 </body>
 
 </html>
